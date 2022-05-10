@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getPets } from '../../api/petfinder';
 import Hero from '../../components/hero';
-import Pet from '../../components/pet';
 import { useParams, Link } from 'react-router-dom';
+// import Pet from '../../components/pet';
 
 
 const HomePage = () => {
@@ -54,7 +54,7 @@ const HomePage = () => {
                 <p>Color: {animal.colors.primary}</p>
                 <p>Gender: {animal.gender}</p>
               </article>
-            </Link> 
+            </Link>
           ))}
         </div>
       ) : (
